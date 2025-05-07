@@ -1,0 +1,273 @@
+Performing Curl Test HAVE_FSETXATTR_6 failed with the following output:
+Change Dir: '/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/Bootstrap.cmk/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_92580/fast
+gmake  -f CMakeFiles/cmTC_92580.dir/build.make CMakeFiles/cmTC_92580.dir/build
+gmake[1]: Entering directory '/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_92580.dir/CurlTests.c.o
+/usr/bin/gcc   -w -DHAVE_FSETXATTR_6  -DHAVE_INTTYPES_H -DHAVE_SYS_WAIT_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ARPA_INET_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_NETINET_UDP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STRINGS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -std=gnu11 -o CMakeFiles/cmTC_92580.dir/CurlTests.c.o -c /home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/Utilities/cmcurl/CMake/CurlTests.c
+/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/Utilities/cmcurl/CMake/CurlTests.c: In function ‘main’:
+/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/Utilities/cmcurl/CMake/CurlTests.c:406:3: error: too many arguments to function ‘fsetxattr’
+  406 |   fsetxattr(0, 0, 0, 0, 0, 0);
+      |   ^~~~~~~~~
+In file included from /home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/Utilities/cmcurl/CMake/CurlTests.c:403:
+/usr/include/x86_64-linux-gnu/sys/xattr.h:54:12: note: declared here
+   54 | extern int fsetxattr (int __fd, const char *__name, const void *__value,
+      |            ^~~~~~~~~
+gmake[1]: *** [CMakeFiles/cmTC_92580.dir/build.make:78: CMakeFiles/cmTC_92580.dir/CurlTests.c.o] Error 1
+gmake[1]: Leaving directory '/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_92580/fast] Error 2
+
+
+Performing Curl Test HAVE_IOCTLSOCKET failed with the following output:
+Change Dir: '/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/Bootstrap.cmk/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_26303/fast
+gmake  -f CMakeFiles/cmTC_26303.dir/build.make CMakeFiles/cmTC_26303.dir/build
+gmake[1]: Entering directory '/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_26303.dir/CurlTests.c.o
+/usr/bin/gcc   -w -DHAVE_IOCTLSOCKET  -DHAVE_INTTYPES_H -DHAVE_SYS_WAIT_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ARPA_INET_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_NETINET_UDP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STRINGS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -std=gnu11 -o CMakeFiles/cmTC_26303.dir/CurlTests.c.o -c /home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/Utilities/cmcurl/CMake/CurlTests.c
+/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/Utilities/cmcurl/CMake/CurlTests.c: In function ‘main’:
+/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/Utilities/cmcurl/CMake/CurlTests.c:204:44: error: ‘FIONBIO’ undeclared (first use in this function)
+  204 |  unsigned long flags = ioctlsocket(socket, FIONBIO, &flags);
+      |                                            ^~~~~~~
+/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/Utilities/cmcurl/CMake/CurlTests.c:204:44: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_26303.dir/build.make:78: CMakeFiles/cmTC_26303.dir/CurlTests.c.o] Error 1
+gmake[1]: Leaving directory '/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_26303/fast] Error 2
+
+
+Performing Curl Test HAVE_IOCTLSOCKET_CAMEL failed with the following output:
+Change Dir: '/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/Bootstrap.cmk/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_380a5/fast
+gmake  -f CMakeFiles/cmTC_380a5.dir/build.make CMakeFiles/cmTC_380a5.dir/build
+gmake[1]: Entering directory '/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_380a5.dir/CurlTests.c.o
+/usr/bin/gcc   -w -DHAVE_IOCTLSOCKET_CAMEL  -DHAVE_INTTYPES_H -DHAVE_SYS_WAIT_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ARPA_INET_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_NETINET_UDP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STRINGS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -std=gnu11 -o CMakeFiles/cmTC_380a5.dir/CurlTests.c.o -c /home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/Utilities/cmcurl/CMake/CurlTests.c
+Linking C executable cmTC_380a5
+/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTC_380a5.dir/link.txt --verbose=1
+/usr/bin/gcc  -w -DHAVE_IOCTLSOCKET_CAMEL  -DHAVE_INTTYPES_H -DHAVE_SYS_WAIT_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ARPA_INET_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_NETINET_UDP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STRINGS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_UNISTD_H -DHAVE_UTIME_H CMakeFiles/cmTC_380a5.dir/CurlTests.c.o -o cmTC_380a5 
+/usr/bin/ld: CMakeFiles/cmTC_380a5.dir/CurlTests.c.o: in function `main':
+CurlTests.c:(.text+0x1d): undefined reference to `IoctlSocket'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_380a5.dir/build.make:99: cmTC_380a5] Error 1
+gmake[1]: Leaving directory '/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_380a5/fast] Error 2
+
+
+Performing Curl Test HAVE_IOCTLSOCKET_CAMEL_FIONBIO failed with the following output:
+Change Dir: '/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/Bootstrap.cmk/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a0d2d/fast
+gmake  -f CMakeFiles/cmTC_a0d2d.dir/build.make CMakeFiles/cmTC_a0d2d.dir/build
+gmake[1]: Entering directory '/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a0d2d.dir/CurlTests.c.o
+/usr/bin/gcc   -w -DHAVE_IOCTLSOCKET_CAMEL_FIONBIO  -DHAVE_INTTYPES_H -DHAVE_SYS_WAIT_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ARPA_INET_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_NETINET_UDP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STRINGS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -std=gnu11 -o CMakeFiles/cmTC_a0d2d.dir/CurlTests.c.o -c /home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/Utilities/cmcurl/CMake/CurlTests.c
+/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/Utilities/cmcurl/CMake/CurlTests.c: In function ‘main’:
+/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/Utilities/cmcurl/CMake/CurlTests.c:252:32: error: ‘FIONBIO’ undeclared (first use in this function)
+  252 |         if(0 != IoctlSocket(0, FIONBIO, &flags))
+      |                                ^~~~~~~
+/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/Utilities/cmcurl/CMake/CurlTests.c:252:32: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_a0d2d.dir/build.make:78: CMakeFiles/cmTC_a0d2d.dir/CurlTests.c.o] Error 1
+gmake[1]: Leaving directory '/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_a0d2d/fast] Error 2
+
+
+Performing Curl Test HAVE_IOCTLSOCKET_FIONBIO failed with the following output:
+Change Dir: '/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/Bootstrap.cmk/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_362e6/fast
+gmake  -f CMakeFiles/cmTC_362e6.dir/build.make CMakeFiles/cmTC_362e6.dir/build
+gmake[1]: Entering directory '/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_362e6.dir/CurlTests.c.o
+/usr/bin/gcc   -w -DHAVE_IOCTLSOCKET_FIONBIO  -DHAVE_INTTYPES_H -DHAVE_SYS_WAIT_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ARPA_INET_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_NETINET_UDP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STRINGS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -std=gnu11 -o CMakeFiles/cmTC_362e6.dir/CurlTests.c.o -c /home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/Utilities/cmcurl/CMake/CurlTests.c
+/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/Utilities/cmcurl/CMake/CurlTests.c: In function ‘main’:
+/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/Utilities/cmcurl/CMake/CurlTests.c:275:32: error: ‘FIONBIO’ undeclared (first use in this function)
+  275 |         if(0 != ioctlsocket(0, FIONBIO, &flags))
+      |                                ^~~~~~~
+/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/Utilities/cmcurl/CMake/CurlTests.c:275:32: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_362e6.dir/build.make:78: CMakeFiles/cmTC_362e6.dir/CurlTests.c.o] Error 1
+gmake[1]: Leaving directory '/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_362e6/fast] Error 2
+
+
+Performing Curl Test HAVE_SETSOCKOPT_SO_NONBLOCK failed with the following output:
+Change Dir: '/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/Bootstrap.cmk/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f5c52/fast
+gmake  -f CMakeFiles/cmTC_f5c52.dir/build.make CMakeFiles/cmTC_f5c52.dir/build
+gmake[1]: Entering directory '/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f5c52.dir/CurlTests.c.o
+/usr/bin/gcc   -w -DHAVE_SETSOCKOPT_SO_NONBLOCK  -DHAVE_INTTYPES_H -DHAVE_SYS_WAIT_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ARPA_INET_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_NETINET_UDP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STRINGS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -std=gnu11 -o CMakeFiles/cmTC_f5c52.dir/CurlTests.c.o -c /home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/Utilities/cmcurl/CMake/CurlTests.c
+/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/Utilities/cmcurl/CMake/CurlTests.c: In function ‘main’:
+/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/Utilities/cmcurl/CMake/CurlTests.c:367:43: error: ‘SO_NONBLOCK’ undeclared (first use in this function); did you mean ‘SOCK_NONBLOCK’?
+  367 |         if(0 != setsockopt(0, SOL_SOCKET, SO_NONBLOCK, 0, 0))
+      |                                           ^~~~~~~~~~~
+      |                                           SOCK_NONBLOCK
+/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/Utilities/cmcurl/CMake/CurlTests.c:367:43: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_f5c52.dir/build.make:78: CMakeFiles/cmTC_f5c52.dir/CurlTests.c.o] Error 1
+gmake[1]: Leaving directory '/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_f5c52/fast] Error 2
+
+
+Performing Curl Test HAVE_O_NONBLOCK failed with the following output:
+Change Dir: '/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/Bootstrap.cmk/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5b3ec/fast
+gmake  -f CMakeFiles/cmTC_5b3ec.dir/build.make CMakeFiles/cmTC_5b3ec.dir/build
+gmake[1]: Entering directory '/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5b3ec.dir/CurlTests.c.o
+/usr/bin/gcc   -w -DHAVE_O_NONBLOCK  -DHAVE_INTTYPES_H -DHAVE_SYS_WAIT_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ARPA_INET_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_NETINET_UDP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STRINGS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -std=gnu11 -o CMakeFiles/cmTC_5b3ec.dir/CurlTests.c.o -c /home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/Utilities/cmcurl/CMake/CurlTests.c
+Linking C executable cmTC_5b3ec
+/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTC_5b3ec.dir/link.txt --verbose=1
+/usr/bin/gcc  -w -DHAVE_O_NONBLOCK  -DHAVE_INTTYPES_H -DHAVE_SYS_WAIT_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ARPA_INET_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_NETINET_UDP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STRINGS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_UNISTD_H -DHAVE_UTIME_H CMakeFiles/cmTC_5b3ec.dir/CurlTests.c.o -o cmTC_5b3ec 
+/usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+(.text+0x1b): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_5b3ec.dir/build.make:99: cmTC_5b3ec] Error 1
+gmake[1]: Leaving directory '/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_5b3ec/fast] Error 2
+
+
+Performing Curl Test HAVE_GETHOSTBYNAME_R_3 failed with the following output:
+Change Dir: '/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/Bootstrap.cmk/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9f626/fast
+gmake  -f CMakeFiles/cmTC_9f626.dir/build.make CMakeFiles/cmTC_9f626.dir/build
+gmake[1]: Entering directory '/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9f626.dir/CurlTests.c.o
+/usr/bin/gcc   -w -DHAVE_GETHOSTBYNAME_R_3  -DHAVE_INTTYPES_H -DHAVE_SYS_WAIT_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ARPA_INET_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_NETINET_UDP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STRINGS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -std=gnu11 -o CMakeFiles/cmTC_9f626.dir/CurlTests.c.o -c /home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/Utilities/cmcurl/CMake/CurlTests.c
+/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/Utilities/cmcurl/CMake/CurlTests.c: In function ‘main’:
+/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/Utilities/cmcurl/CMake/CurlTests.c:82:23: error: storage size of ‘hdata’ isn’t known
+   82 |   struct hostent_data hdata;
+      |                       ^~~~~
+/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/Utilities/cmcurl/CMake/CurlTests.c:94:8: error: too few arguments to function ‘gethostbyname_r’
+   94 |   rc = gethostbyname_r(address, &h, &hdata);
+      |        ^~~~~~~~~~~~~~~
+In file included from /home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/Utilities/cmcurl/CMake/CurlTests.c:72:
+/usr/include/netdb.h:177:12: note: declared here
+  177 | extern int gethostbyname_r (const char *__restrict __name,
+      |            ^~~~~~~~~~~~~~~
+gmake[1]: *** [CMakeFiles/cmTC_9f626.dir/build.make:78: CMakeFiles/cmTC_9f626.dir/CurlTests.c.o] Error 1
+gmake[1]: Leaving directory '/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_9f626/fast] Error 2
+
+
+Performing Curl Test HAVE_GETHOSTBYNAME_R_5 failed with the following output:
+Change Dir: '/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/Bootstrap.cmk/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_be082/fast
+gmake  -f CMakeFiles/cmTC_be082.dir/build.make CMakeFiles/cmTC_be082.dir/build
+gmake[1]: Entering directory '/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_be082.dir/CurlTests.c.o
+/usr/bin/gcc   -w -DHAVE_GETHOSTBYNAME_R_5  -DHAVE_INTTYPES_H -DHAVE_SYS_WAIT_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ARPA_INET_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_NETINET_UDP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STRINGS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -std=gnu11 -o CMakeFiles/cmTC_be082.dir/CurlTests.c.o -c /home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/Utilities/cmcurl/CMake/CurlTests.c
+/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/Utilities/cmcurl/CMake/CurlTests.c: In function ‘main’:
+/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/Utilities/cmcurl/CMake/CurlTests.c:97:8: error: too few arguments to function ‘gethostbyname_r’
+   97 |   rc = gethostbyname_r(address, &h, buffer, 8192, &h_errnop);
+      |        ^~~~~~~~~~~~~~~
+In file included from /home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/Utilities/cmcurl/CMake/CurlTests.c:72:
+/usr/include/netdb.h:177:12: note: declared here
+  177 | extern int gethostbyname_r (const char *__restrict __name,
+      |            ^~~~~~~~~~~~~~~
+gmake[1]: *** [CMakeFiles/cmTC_be082.dir/build.make:78: CMakeFiles/cmTC_be082.dir/CurlTests.c.o] Error 1
+gmake[1]: Leaving directory '/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_be082/fast] Error 2
+
+
+Performing Curl Test HAVE_GETHOSTBYNAME_R_3_REENTRANT failed with the following output:
+Change Dir: '/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/Bootstrap.cmk/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b60c4/fast
+gmake  -f CMakeFiles/cmTC_b60c4.dir/build.make CMakeFiles/cmTC_b60c4.dir/build
+gmake[1]: Entering directory '/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b60c4.dir/CurlTests.c.o
+/usr/bin/gcc   -w -DHAVE_GETHOSTBYNAME_R_3_REENTRANT  -DHAVE_INTTYPES_H -DHAVE_SYS_WAIT_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ARPA_INET_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_NETINET_UDP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STRINGS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -std=gnu11 -o CMakeFiles/cmTC_b60c4.dir/CurlTests.c.o -c /home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/Utilities/cmcurl/CMake/CurlTests.c
+/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/Utilities/cmcurl/CMake/CurlTests.c: In function ‘main’:
+/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/Utilities/cmcurl/CMake/CurlTests.c:82:23: error: storage size of ‘hdata’ isn’t known
+   82 |   struct hostent_data hdata;
+      |                       ^~~~~
+/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/Utilities/cmcurl/CMake/CurlTests.c:94:8: error: too few arguments to function ‘gethostbyname_r’
+   94 |   rc = gethostbyname_r(address, &h, &hdata);
+      |        ^~~~~~~~~~~~~~~
+In file included from /home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/Utilities/cmcurl/CMake/CurlTests.c:72:
+/usr/include/netdb.h:177:12: note: declared here
+  177 | extern int gethostbyname_r (const char *__restrict __name,
+      |            ^~~~~~~~~~~~~~~
+gmake[1]: *** [CMakeFiles/cmTC_b60c4.dir/build.make:78: CMakeFiles/cmTC_b60c4.dir/CurlTests.c.o] Error 1
+gmake[1]: Leaving directory '/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_b60c4/fast] Error 2
+
+
+Performing Curl Test HAVE_GETHOSTBYNAME_R_5_REENTRANT failed with the following output:
+Change Dir: '/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/Bootstrap.cmk/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_72f3d/fast
+gmake  -f CMakeFiles/cmTC_72f3d.dir/build.make CMakeFiles/cmTC_72f3d.dir/build
+gmake[1]: Entering directory '/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_72f3d.dir/CurlTests.c.o
+/usr/bin/gcc   -w -DHAVE_GETHOSTBYNAME_R_5_REENTRANT  -DHAVE_INTTYPES_H -DHAVE_SYS_WAIT_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ARPA_INET_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_NETINET_UDP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STRINGS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -std=gnu11 -o CMakeFiles/cmTC_72f3d.dir/CurlTests.c.o -c /home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/Utilities/cmcurl/CMake/CurlTests.c
+/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/Utilities/cmcurl/CMake/CurlTests.c: In function ‘main’:
+/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/Utilities/cmcurl/CMake/CurlTests.c:97:8: error: too few arguments to function ‘gethostbyname_r’
+   97 |   rc = gethostbyname_r(address, &h, buffer, 8192, &h_errnop);
+      |        ^~~~~~~~~~~~~~~
+In file included from /home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/Utilities/cmcurl/CMake/CurlTests.c:72:
+/usr/include/netdb.h:177:12: note: declared here
+  177 | extern int gethostbyname_r (const char *__restrict __name,
+      |            ^~~~~~~~~~~~~~~
+gmake[1]: *** [CMakeFiles/cmTC_72f3d.dir/build.make:78: CMakeFiles/cmTC_72f3d.dir/CurlTests.c.o] Error 1
+gmake[1]: Leaving directory '/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_72f3d/fast] Error 2
+
+
+Performing Curl Test HAVE_GLIBC_STRERROR_R failed with the following output:
+Change Dir: '/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/Bootstrap.cmk/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ed5f9/fast
+gmake  -f CMakeFiles/cmTC_ed5f9.dir/build.make CMakeFiles/cmTC_ed5f9.dir/build
+gmake[1]: Entering directory '/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ed5f9.dir/CurlTests.c.o
+/usr/bin/gcc   -w -DHAVE_GLIBC_STRERROR_R  -DHAVE_INTTYPES_H -DHAVE_SYS_WAIT_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ARPA_INET_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_NETINET_UDP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STRINGS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -std=gnu11 -o CMakeFiles/cmTC_ed5f9.dir/CurlTests.c.o -c /home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/Utilities/cmcurl/CMake/CurlTests.c
+/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/Utilities/cmcurl/CMake/CurlTests.c: In function ‘main’:
+/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/Utilities/cmcurl/CMake/CurlTests.c:383:51: error: subscripted value is neither array nor pointer nor vector
+  383 |   check(strerror_r(EACCES, buffer, sizeof(buffer))[0]);
+      |                                                   ^
+gmake[1]: *** [CMakeFiles/cmTC_ed5f9.dir/build.make:78: CMakeFiles/cmTC_ed5f9.dir/CurlTests.c.o] Error 1
+gmake[1]: Leaving directory '/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_ed5f9/fast] Error 2
+
+
+Performing Curl Test HAVE_BUILTIN_AVAILABLE failed with the following output:
+Change Dir: '/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/CMakeFiles/CMakeTmp'
+
+Run Build Command(s): /home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/Bootstrap.cmk/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_25383/fast
+gmake  -f CMakeFiles/cmTC_25383.dir/build.make CMakeFiles/cmTC_25383.dir/build
+gmake[1]: Entering directory '/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_25383.dir/CurlTests.c.o
+/usr/bin/gcc   -w -DHAVE_BUILTIN_AVAILABLE  -DHAVE_INTTYPES_H -DHAVE_SYS_WAIT_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ARPA_INET_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_NETINET_UDP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STRINGS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -std=gnu11 -o CMakeFiles/cmTC_25383.dir/CurlTests.c.o -c /home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/Utilities/cmcurl/CMake/CurlTests.c
+/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/Utilities/cmcurl/CMake/CurlTests.c: In function ‘main’:
+/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/Utilities/cmcurl/CMake/CurlTests.c:430:26: error: ‘macOS’ undeclared (first use in this function)
+  430 |   if(__builtin_available(macOS 10.12, *)) {}
+      |                          ^~~~~
+/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/Utilities/cmcurl/CMake/CurlTests.c:430:26: note: each undeclared identifier is reported only once for each function it appears in
+/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/Utilities/cmcurl/CMake/CurlTests.c:430:31: error: expected ‘)’ before numeric constant
+  430 |   if(__builtin_available(macOS 10.12, *)) {}
+      |                         ~     ^~~~~~
+      |                               )
+gmake[1]: *** [CMakeFiles/cmTC_25383.dir/build.make:78: CMakeFiles/cmTC_25383.dir/CurlTests.c.o] Error 1
+gmake[1]: Leaving directory '/home/khosro/Documents/porjects/Linphone/linphone-desktop/cmake-3.28.3/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_25383/fast] Error 2
+
+
+Looking for a Fortran compiler failed with the following output:
+-- The Fortran compiler identification is unknown
+CMake Error at CMakeLists.txt:2 (project):
+  No CMAKE_Fortran_COMPILER could be found.
+
+  Tell CMake where to find the compiler by setting either the environment
+  variable "FC" or the CMake cache entry CMAKE_Fortran_COMPILER to the full
+  path to the compiler, or to the compiler name if it is in the PATH.
+
+
+-- Configuring incomplete, errors occurred!
+
